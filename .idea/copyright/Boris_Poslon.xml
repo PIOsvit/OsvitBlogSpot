@@ -1,0 +1,9 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="Copyright (c) &amp;#36;today.year. &#10;App name: &amp;#36;appname&#10;Version: 1.0&#10;Author: Boris Poslon" />
+    <option name="keyword" value="Copyright" />
+    <option name="allowReplaceKeyword" value="" />
+    <option name="myName" value="Boris Poslon" />
+    <option name="myLocal" value="true" />
+  </copyright>
+</component>
