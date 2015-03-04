@@ -15,54 +15,44 @@ import biz.osvit.android.osvitblogspot.base.BaseFragment;
 /**
  * Created by Boris on 21.2.2015..
  */
-public class LoginMainFragment extends BaseFragment implements View.OnClickListener{
+public class LoginMainFragment extends BaseFragment implements View.OnClickListener {
 
     private Button mLoginBtn;
     private Button mRegisterBtn;
-    private TextView mGhostmodeTxtView;
+    private TextView mGhostmodeTextView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View layoutView = inflater.inflate(R.layout.fragment_login_main, container, false);
-        prepareUI(layoutView);
-        return layoutView;
+        return inflater.inflate(R.layout.fragment_login_main, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        prepareUI(view);
     }
 
     @Override
     protected void prepareUI(@NonNull View layoutView) {
         mLoginBtn = (Button) layoutView.findViewById(R.id.login);
         mRegisterBtn = (Button) layoutView.findViewById(R.id.register);
-        mGhostmodeTxtView = (TextView) layoutView.findViewById(R.id.skip_login);
+        mGhostmodeTextView = (TextView) layoutView.findViewById(R.id.skip_login);
 
-        mLoginBtn.setOnClickListener(mOnClickListener);
-        mRegisterBtn.setOnClickListener(mOnClickListener);
-        mGhostmodeTxtView.setOnClickListener(mOnClickListener);
+        mLoginBtn.setOnClickListener(this);
+        mRegisterBtn.setOnClickListener(this);
+        mGhostmodeTextView.setOnClickListener(this);
     }
 
     @Override
     protected void prepareData() {
-
     }
-
-    View.OnClickListener mOnClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-
-            switch (v.getId()) {
-                case R.id.login:
-                    break;
-                case R.id.register:
-                    break;
-                case R.id.skip_login:
-                    break;
-            }
-        }
-    };
 
     @Override
     public void onClick(View v) {
-        if(v==mLoginBtn){
-
+        if (v == mLoginBtn) {
+            replaceFragment(R.id.fragment_container, new LoginFragment(), true);
+        } else if (v == mRegisterBtn) {
+            //todo handle registration
         }
     }
 }

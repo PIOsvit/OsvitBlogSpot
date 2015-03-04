@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="fragment_container" type="id"/>
-    <item name="login" type="id"/>
-    <item name="register" type="id"/>
-    <item name="skip_login" type="id"></item>
-    <item name="email" type="id"></item>
-    <item name="password" type="id"></item>
-    <item name="privacy_policy" type="id"></item>
-    <item name="first_name" type="id"></item>
-    <item name="last_name" type="id"></item>
-    <item name="male" type="id"></item>
-    <item name="female" type="id"></item>
-    <item name="genre" type="id"></item>
+    <item name="fragment_container" type="id" />
+    <item name="login" type="id" />
+    <item name="register" type="id" />
+    <item name="skip_login" type="id" />
+    <item name="email" type="id" />
+    <item name="password" type="id" />
+    <item name="retype_password" type="id" />
+    <item name="nick" type="id" />
+    <item name="privacy_policy" type="id" />
+    <item name="first_name" type="id" />
+    <item name="last_name" type="id" />
+    <item name="male" type="id" />
+    <item name="female" type="id" />
+    <item name="gender" type="id" />
+    <item name="terms_and_conditions" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="drawer_container" type="id" />
+    <item name="side_menu_container" type="id" />
 
 </resources>
