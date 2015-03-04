@@ -3,5 +3,14 @@
     <item name="fragment_container" type="id"/>
     <item name="login" type="id"/>
     <item name="register" type="id"/>
-    <item name="ghost_mode" type="id"></item>
+    <item name="skip_login" type="id"></item>
+    <item name="email" type="id"></item>
+    <item name="password" type="id"></item>
+    <item name="privacy_policy" type="id"></item>
+    <item name="first_name" type="id"></item>
+    <item name="last_name" type="id"></item>
+    <item name="male" type="id"></item>
+    <item name="female" type="id"></item>
+    <item name="genre" type="id"></item>
+
 </resources>

@@ -9,4 +9,7 @@
     <string name="login">Login</string>
     <string name="register">Registriraj se</string>
     <string name="not_registered">Not registered? Try Ghost mode!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="privacy_policy">Privacy policy</string>
 </resources>

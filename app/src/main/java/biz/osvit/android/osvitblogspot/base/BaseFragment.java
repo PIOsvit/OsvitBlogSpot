@@ -12,4 +12,8 @@ public abstract class BaseFragment extends Fragment {
     protected abstract void prepareUI(@NonNull View layoutView);
 
     protected abstract void prepareData();
+
+    protected void replaceFragment(int layoutId, @NonNull BaseFragment fragment, boolean addToBackStack){
+
+    }
 }

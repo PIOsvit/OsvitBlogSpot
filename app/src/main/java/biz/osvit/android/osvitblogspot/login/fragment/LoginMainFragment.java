@@ -32,7 +32,7 @@ public class LoginMainFragment extends BaseFragment implements View.OnClickListe
     protected void prepareUI(@NonNull View layoutView) {
         mLoginBtn = (Button) layoutView.findViewById(R.id.login);
         mRegisterBtn = (Button) layoutView.findViewById(R.id.register);
-        mGhostmodeTxtView = (TextView) layoutView.findViewById(R.id.ghost_mode);
+        mGhostmodeTxtView = (TextView) layoutView.findViewById(R.id.skip_login);
 
         mLoginBtn.setOnClickListener(mOnClickListener);
         mRegisterBtn.setOnClickListener(mOnClickListener);
@@ -53,17 +53,16 @@ public class LoginMainFragment extends BaseFragment implements View.OnClickListe
                     break;
                 case R.id.register:
                     break;
-                case R.id.ghost_mode:
+                case R.id.skip_login:
                     break;
             }
-
-
         }
     };
 
-
     @Override
     public void onClick(View v) {
+        if(v==mLoginBtn){
 
+        }
     }
 }

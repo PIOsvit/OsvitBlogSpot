@@ -50,7 +50,7 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
     <TextView
-        android:id="@id/ghost_mode"
+        android:id="@id/skip_login"
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_margin="20dp"
