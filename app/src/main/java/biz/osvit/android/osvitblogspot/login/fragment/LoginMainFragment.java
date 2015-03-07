@@ -1,16 +1,18 @@
 package biz.osvit.android.osvitblogspot.login.fragment;
 
-import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
+        import android.content.Intent;
+        import android.os.Bundle;
+        import android.support.annotation.NonNull;
+        import android.support.annotation.Nullable;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import android.widget.Button;
+        import android.widget.TextView;
 
-import biz.osvit.android.osvitblogspot.R;
-import biz.osvit.android.osvitblogspot.base.BaseFragment;
+        import biz.osvit.android.osvitblogspot.R;
+        import biz.osvit.android.osvitblogspot.base.BaseFragment;
+        import biz.osvit.android.osvitblogspot.main.activity.MainActivity;
 
 /**
  * Created by Boris on 21.2.2015..
@@ -53,6 +55,9 @@ public class LoginMainFragment extends BaseFragment implements View.OnClickListe
             replaceFragment(R.id.fragment_container, new LoginFragment(), true);
         } else if (v == mRegisterBtn) {
             //todo handle registration
+        } else if (v == mGhostmodeTextView) {
+            startActivity(new Intent(getActivity(), MainActivity.class));
+            getActivity().finish();
         }
     }
 }

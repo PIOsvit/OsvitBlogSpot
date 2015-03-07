@@ -18,5 +18,7 @@
     <item name="toolbar" type="id" />
     <item name="drawer_container" type="id" />
     <item name="side_menu_container" type="id" />
+    <item name="adapter_view" type="id" />
+    <item name="content_title" type="id" />
 
 </resources>

@@ -20,4 +20,9 @@
     <string name="female">Female</string>
     <string name="terms_and_conditions">Terms and conditions</string>
     <string name="password_different">Passwords dont match</string>
+    <string name="news">News</string>
+    <string name="my_news">My News</string>
+    <string name="create_post">Create post</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="about">About</string>
 </resources>
