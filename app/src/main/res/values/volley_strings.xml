@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="authentication">authentication</string>
+    <string name="error">Greška</string>
+    <string name="error_timeout">Timeout</string>
+    <string name="error_auth">Greška prilikom prijave, pokušajte kasnije.</string>
+    <string name="error_no_internet">Nema internet konekcije</string>
+    <string name="error_field_required">Potrebno</string>
+    <string name="gson_error">error</string>
+    <string name="gson_message">message</string>
+    <string name="gson_error_message">error_message</string>
+
+</resources>
