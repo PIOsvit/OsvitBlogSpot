@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 
 import biz.osvit.android.osvitblogspot.R;
 import biz.osvit.android.osvitblogspot.base.BaseActivity;
+import biz.osvit.android.osvitblogspot.main.fragment.PostsListFragment;
 import biz.osvit.android.osvitblogspot.main.fragment.SideMenuFragment;
 
 /**
@@ -35,6 +36,7 @@ public class MainActivity extends BaseActivity {
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
         replaceFragment(R.id.side_menu_container, new SideMenuFragment(), false);
+        replaceFragment(R.id.fragment_container, new PostsListFragment(), false);
     }
 
     @Override

@@ -10,6 +10,7 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
+import com.google.gson.annotations.SerializedName;
 
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
@@ -19,6 +20,7 @@ import biz.osvit.android.osvitblogspot.commons.utils.Utils;
 
 public class GsonRequest<T> extends Request<T> {
 
+    //encoding and backend format type
     private static final String PROTOCOL_CHARSET = "UTF8";
     private static final String PROTOCOL_CONTENT_TYPE = String.format("application/json; charset=%s", PROTOCOL_CHARSET);
 
@@ -26,6 +28,7 @@ public class GsonRequest<T> extends Request<T> {
     private final Response.Listener<T> mListener;
     private final String mRequestBody;
     private Class<T> mClazz;
+
 
     public GsonRequest(String url, Class<T> clazz, String jsonRequestBody,
                        Response.Listener<T> listener, Response.ErrorListener errorListener) {
@@ -61,6 +64,7 @@ public class GsonRequest<T> extends Request<T> {
         try {
             String json = new String(response.data, PROTOCOL_CHARSET);
             Utils.doLog(json);
+
             return Response.success(gson.fromJson(json, mClazz), HttpHeaderParser.parseCacheHeaders(response));
         } catch (UnsupportedEncodingException e) {
             return Response.error(new ParseError(e));
